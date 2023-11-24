@@ -1,0 +1,16 @@
+// ===================================
+// =containers
+// ===================================
+
+.l-container {
+  margin: 0 auto;
+  padding-inline: calc(18 / 16 * 1rem);
+  max-width: 1500px;
+
+  @include breakpoint(medium) {
+    padding-inline: calc(24 / 16 * 1rem);
+  }
+  @include breakpoint(large) {
+    padding-inline: calc(48 / 16 * 1rem);
+  }
+}
