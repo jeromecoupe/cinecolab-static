@@ -1,13 +1,41 @@
-<header>
-  <div class="l-container">
-    <p>{% include "svg/logo.svg" %}</p>
-    <nav>
-      <ul>
-        <li><a href="#">Ressources</a></li>
-        <li><a href="#">Formations</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">A propos</a></li>
+<header class="c-siteheader">
+  <div class="c-siteheader__content l-container">
+    <p class="c-siteheader__logo">{% include "svg/logo.svg" %}</p>
+    <nav class="c-siteheader__mainnav">
+      <ul class="c-mainnav">
+        <li class="c-mainnav__item">
+          <a class="c-mainnav__link" href="#">Ressources</a>
+        </li>
+        <li class="c-mainnav__item">
+          <a class="c-mainnav__link" href="#">Formations</a>
+        </li>
+        <li class="c-mainnav__item">
+          <a class="c-mainnav__link" href="#">Blog</a>
+        </li>
+        <li class="c-mainnav__item">
+          <a class="c-mainnav__link" href="#">A propos</a>
+        </li>
       </ul>
     </nav>
+    <p class="c-siteheader__hamburger">
+      <a href="#footernav" class="js-menutrigger">
+        {% include "svg/icon_nav.svg" %}
+      </a>
+    </p>
+  </div>
+  <div class="c-mobilemenu js-mobilemenu">
+    <div class="c-mobilemenu__header">
+      <a href="#" class="js-menutrigger">close</a>
+    </div>
+    <div class="c-mobilemenu__main">
+      <nav>
+        <ul class="c-mobilenav">
+          <li class="c-mobilenav__item"><a class="c-mobilenav__link" href="#">Ressources</a></li>
+          <li class="c-mobilenav__item"><a class="c-mobilenav__link" href="#">Formations</a></li>
+          <li class="c-mobilenav__item"><a class="c-mobilenav__link" href="#">Blog</a></li>
+          <li class="c-mobilenav__item"><a class="c-mobilenav__link" href="#">À Propos</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>

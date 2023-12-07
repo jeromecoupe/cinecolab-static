@@ -1,0 +1,45 @@
+// ===================================
+// =site header
+// ===================================
+
+.c-siteheader {
+  --vpadding: calc(18 / 16 * 1rem);
+  padding-block: var(--vpadding);
+
+  @include breakpoint(medium) {
+    --vpadding: calc(24 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    --vpadding: calc(36 / 16 * 1rem);
+  }
+}
+
+.c-siteheader__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.c-siteheader__logo {
+  margin-inline-end: auto;
+  margin-block: 0;
+}
+
+.c-siteheader__mainnav {
+  display: none;
+
+  @include breakpoint(large) {
+    display: block;
+  }
+}
+
+.c-siteheader__hamburger {
+  display: block;
+  margin-block: 0;
+
+  @include breakpoint(large) {
+    display: none;
+  }
+}
