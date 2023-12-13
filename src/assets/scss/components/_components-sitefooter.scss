@@ -6,7 +6,6 @@
   margin-block-start: 30px;
   padding-block-start: 48px;
   background-color: var(--color-background-inverse);
-  color: var(--color-text-inverse);
 
   @include breakpoint(medium) {
     margin-block-start: 60px;
