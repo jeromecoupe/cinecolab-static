@@ -1,0 +1,16 @@
+/* ===================================
+=links
+=================================== */
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-underline-offset: 2px;
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent-dark);
+    text-decoration-color: var(--color-accent);
+  }
+}

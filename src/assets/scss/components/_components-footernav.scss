@@ -1,0 +1,38 @@
+// ===================================
+// =footer nav
+// ===================================
+
+.c-footernav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.32;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: calc(3 / 16 * 1rem);
+}
+
+.c-footernav__link {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text-offset-inverse);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.32;
+  font-family: var(--fontstack-main);
+  padding-block: calc(1 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    display: inline-block;
+    padding-block: calc(1 / 16 * 1rem);
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: var(--color-accent);
+  }
+}

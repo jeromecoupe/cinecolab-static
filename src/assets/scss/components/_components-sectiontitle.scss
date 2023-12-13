@@ -1,0 +1,15 @@
+// ===================================
+// =sectionstitle
+// ===================================
+
+.c-sectiontitle {
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+  padding-block-start: calc(18 / 16 * 1rem);
+  padding-block-end: calc(30 / 16 * 1rem);
+  font-weight: 500;
+  font-size: calc(13 / 16 * 1rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-family: var(--fontstack-alt);
+}

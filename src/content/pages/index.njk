@@ -6,90 +6,114 @@ permalink: /index.html
 
 {% block content %}
 
-  <div class="c-pagesection">
+  <div class="c-section  c-section--pageintro">
     <div class="l-container">
       <h1 class="c-pagetitle"><span>Cinéma</span>, enjeux ecologiques et sociétaux</h1>
-      <h2>Faire notre part</h2>
-      <p>Nous pensons que le cinéma doit évoluer au regard des défis que nos sociétés ont à relever. Cinécolab est une initiative de 4 écoles de cinéma belges (HELB, INSAS, IAD, la Cambre) qui compile des ressources et lance des initiatives afin de faire évoluer les pratiques du secteur vers plus d'écologie et de social.</p>
-      <p><a href="#">Le projet en détail</a></p>
     </div>
   </div>
-  <div class="c-pagesection">
+  <div class="c-section">
     <div class="l-container">
-      <h2>Blogposts</h2>
-      <ul>
+
+      <h2 class="c-sectiontitle">Faire notre part</h2>
+
+      <div class="l-half">
+        <div>
+          <p>Nous pensons que le cinéma doit évoluer au regard des défis que nos sociétés ont à relever. Cinécolab est une initiative de 4 écoles de cinéma belges (<a href="#">HELB</a>, <a href="#">INSAS</a>, <a href="#">IAD</a>, <a href="#">la Cambre</a>) afin de faire évoluer le secteur vers plus d'écologie et de social.</p>
+          <p class="u-mbs-l"><a class="c-ctalink" href="#">Le projet en détail {% include "svg/icon_arrowright.svg" %}</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="c-section">
+    <div class="l-container">
+      <h2 class="c-sectiontitle">Blogposts</h2>
+      <ul class="l-grid  l-grid--3cols@medium">
         <li>
-          <article>
-            <img src="/assets/img/blog_images/castings.jpg"
-                 srcset="/assets/img/blog_images/castings.jpg 600w,
-                         /assets/img/blog_images/castings.jpg 800w"
-                 sizes="(min-width: 750px) 33vw,
-                        100vw"
-                 alt="Woman filmed while pretending to drive a car"
-                 class="o-fluidimg"
-                 loading="lazy"
-                 decoding="async">
-            <p>Interview</p>
-            <h3>Castings engagés et locaux</h3>
-            <p><time datetime="2023-03-22">22 mars 2023</time></p>
+          <article class="c-blogcard">
+            <div class="c-blogcard__media">
+              <a href="#">
+                <img src="/assets/img/blog_images/castings.jpg"
+                     srcset="/assets/img/blog_images/castings.jpg 600w,
+                             /assets/img/blog_images/castings.jpg 800w"
+                     sizes="(min-width: 750px) 33vw,
+                             100vw"
+                     alt="Une femme filmée conduisant une voiture"
+                     class="c-blogcard__image  o-fluidimg"
+                     loading="lazy"
+                     decoding="async">
+              </a>
+            </div>
+            <p class="c-blogcard__type">Interview</p>
+            <h3 class="c-blogcard__title"><a href="#">Castings engagés et locaux</a></h3>
+            <p class="c-blogcard__date"><time datetime="2023-03-22">22 mars 2023</time></p>
           </article>
         </li>
         <li>
-          <img src="/assets/img/blog_images/bike.jpg"
-                 srcset="/assets/img/blog_images/bike.jpg 600w,
-                         /assets/img/blog_images/bike.jpg 800w"
-                 sizes="(min-width: 750px) 33vw,
-                        100vw"
-                 alt="Bike in the city"
-                 class="o-fluidimg"
-                 loading="lazy"
-                 decoding="async">
-            <p>Article</p>
-            <h3>Les transports, un poste clef pour réduire l'empreinte carbone</h3>
-            <p><time datetime="2023-03-22">22 mars 2023</time></p>
+          <article class="c-blogcard">
+            <div class="c-blogcard__media">
+              <a href="#">
+                <img src="/assets/img/blog_images/bike.jpg"
+                     srcset="/assets/img/blog_images/bike.jpg 600w,
+                             /assets/img/blog_images/bike.jpg 800w"
+                     sizes="(min-width: 750px) 33vw,
+                             100vw"
+                     alt="Un vélo dans la ville"
+                     class="c-blogcard__image  o-fluidimg"
+                     loading="lazy"
+                     decoding="async">
+              </a>
+            </div>
+            <p class="c-blogcard__type">Article</p>
+            <h3 class="c-blogcard__title"><a href="#">Les transports, un poste clef pour réduire l'empreinte carbone</a></h3>
+            <p class="c-blogcard__date"><time datetime="2023-03-22">22 mars 2023</time></p>
           </article>
         </li>
         <li>
-          <article>
-            <img src="/assets/img/blog_images/lights.jpg"
-                 srcset="/assets/img/blog_images/lights.jpg 600w,
-                         /assets/img/blog_images/lights.jpg 800w"
-                 sizes="(min-width: 750px) 33vw,
-                        100vw"
-                 alt="Man handling a massive light and diffuser"
-                 class="o-fluidimg"
-                 loading="lazy"
-                 decoding="async">
-            <p>Article</p>
-            <h3>Et les lumières dans tout ça ?</h3>
-            <p><time datetime="2023-03-22">22 mars 2023</time></p>
+          <article class="c-blogcard">
+            <div class="c-blogcard__media">
+              <a href="#">
+                <img src="/assets/img/blog_images/lights.jpg"
+                     srcset="/assets/img/blog_images/lights.jpg 600w,
+                             /assets/img/blog_images/lights.jpg 800w"
+                     sizes="(min-width: 750px) 33vw,
+                             100vw"
+                     alt="Un homme tenant un grand diffuseur pour spot"
+                     class="c-blogcard__image  o-fluidimg"
+                     loading="lazy"
+                     decoding="async">
+              </a>
+            </div>
+            <p class="c-blogcard__type">Article</p>
+            <h3 class="c-blogcard__title"><a href="#">Et les lumières dans tout ça ?</a></h3>
+            <p class="c-blogcard__date"><time datetime="2023-03-21">21 mars 2023</time></p>
           </article>
         </li>
       </ul>
-      <p><a href="#">Tous les blogposts</a></p>
+      <p class="u-mbs-l"><a class="c-ctalink" href="#">Tous les blogposts {% include "svg/icon_arrowright.svg" %}</a></p>
       
     </div>
   </div>
-  <div class="c-pagesection">
+  <div class="c-section">
     <div class="l-container">
-      <h2>Formations</h2>
-      <div>
-        <div>
-          <h3>Formations et workshops</h3>
+      <h2 class="c-sectiontitle">Formations</h2>
+      <div class="c-mod-imgtxt">
+        <div class="c-mod-imgtxt__img">
+          <img src="/assets/img/trainings_home.jpg"
+                srcset="/assets/img/trainings_home.jpg 800w,
+                        /assets/img/trainings_home.jpg 1500w"
+                sizes="(min-width: 750px) 50vw,
+                      100vw"
+                alt="Hands taking notes on a wooden table"
+                class="u-grayscale o-fluidimg"
+                loading="lazy"
+                decoding="async">
+        </div>
+        <div class="c-mod-imgtxt__txt">
+          <h3 class="c-h2">Formations et workshops</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vitae dolorem, facere, perspiciatis ad quia suscipit, cumque incidunt laudantium hic perferendis laborum.</p>
           <p>Quae nulla atque est harum amet maiores iste dolorem doloremque delectus dolore reiciendis dolor fugit error, architecto officiis exercitationem libero minima illo minus quidem, sequi laborum placeat sit. Voluptas, dignissimos.</p>
-          <p><a href="#">Nos formations</a></p>
-        </div>
-        <div>
-            <img src="/assets/img/trainings_home.jpg"
-                 srcset="/assets/img/trainings_home.jpg 800w,
-                         /assets/img/trainings_home.jpg 1500w"
-                 sizes="(min-width: 750px) 50vw,
-                        100vw"
-                 alt="Hands taking notes on a wooden table"
-                 class="o-fluidimg"
-                 loading="lazy"
-                 decoding="async">
+          <p class="u-mbs-l"><a class="c-ctalink" href="#">Nos formations {% include "svg/icon_arrowright.svg" %}</a></p>
         </div>
       </div>
     </div>

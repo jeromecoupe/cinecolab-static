@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: calc(12 / 16 * 1rem);
+  gap: calc(18 / 16 * 1rem);
 }
 
 .c-mainnav__link {
@@ -19,9 +19,11 @@
   padding-block: calc(3 / 16 * 1rem);
   text-decoration: none;
   color: var(--color-text);
-  font-weight: 420;
-  font-size: calc(18 / 16 * 1rem);
+  font-weight: 450;
+  font-size: calc(16 / 16 * 1rem);
   font-family: var(--fontstack-alt);
+  text-transform: uppercase;
+  letter-spacing: 3%;
   transition: color 0.2s ease-out;
 
   &:hover,

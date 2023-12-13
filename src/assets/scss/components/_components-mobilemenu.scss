@@ -2,6 +2,15 @@
 // =mobile menu
 // ===================================
 
+@keyframes menuAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .c-mobilemenu {
   position: fixed;
   top: 0;
@@ -11,10 +20,19 @@
   background-color: var(--color-text);
   padding: calc(18 / 16 * 1rem);
 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  z-index: 999;
+
   display: none;
 
   &.is-active {
-    display: block;
+    display: flex;
+
+    animation: menuAppear 0.12s ease-out;
 
     @include breakpoint(large) {
       display: none;
@@ -24,4 +42,48 @@
   @include breakpoint(medium) {
     padding: calc(24 / 16 * 1rem);
   }
+}
+
+.c-mobilemenu__header {
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.c-mobilemenu__logo {
+  margin-block: 0;
+  margin-inline-end: auto;
+}
+
+.c-mobilemenu__logo svg {
+  display: block;
+  color: var(--color-text-inverse);
+}
+
+.c-mobilemenu__actions {
+  line-height: 0;
+}
+
+.c-mobilemenu__action {
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.c-mobilemenu__action svg {
+  display: block;
+}
+
+.c-mobilemenu__main {
+  flex: 1 1 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }

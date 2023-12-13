@@ -1,0 +1,33 @@
+// ===================================
+// =sections
+// ===================================
+
+.c-section {
+  --vpadding: 30px;
+  padding-block: var(--vpadding);
+
+  @include breakpoint(medium) {
+    --vpadding: 36px;
+  }
+
+  @include breakpoint(large) {
+    --vpadding: 45px;
+  }
+}
+
+// ===================================
+// =variants
+// ===================================
+
+.c-section--pageintro {
+  --vpadding: 42px;
+  padding-block: var(--vpadding);
+
+  @include breakpoint(medium) {
+    --vpadding: 54px;
+  }
+
+  @include breakpoint(large) {
+    --vpadding: 84px;
+  }
+}

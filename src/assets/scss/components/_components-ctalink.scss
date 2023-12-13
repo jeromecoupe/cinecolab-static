@@ -1,0 +1,40 @@
+// ===================================
+// =button
+// ===================================
+
+.c-ctalink {
+  display: inline-block;
+
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+  font-family: var(--fontstack-main);
+  padding-block-end: calc(8 / 16 * 1rem);
+
+  border-bottom: 2px solid var(--color-accent);
+
+  text-decoration: none;
+  color: var(--color-text);
+  transition: border-color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-text);
+    border-color: var(--color-accent-dark);
+  }
+}
+
+.c-ctalink > svg {
+  color: var(--color-text);
+  display: inline-block;
+  margin-inline-start: 6px;
+  vertical-align: middle;
+  transform: translate3d(-1px, 0, 0);
+
+  transition: transform 0.2s ease-out;
+}
+
+.c-ctalink:hover > svg,
+.c-ctalink:focus > svg {
+  transform: translate3d(0, 0, 0);
+}

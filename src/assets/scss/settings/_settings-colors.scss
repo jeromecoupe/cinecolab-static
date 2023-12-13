@@ -15,21 +15,24 @@
   --color-gray-700: #e6e6e6;
   --color-gray-800: #fafafa;
 
-  --color-green-main: #0ed17f;
-  --color-green-dark: #0eaa69;
-  --color-green-bright: #14e095;
-  --color-green-washed: #d8f8ea;
-
-  --color-ocher-main: #d1b20e;
-  --color-ocher-dark: #b89d0c;
-  --color-ocher-bright: #d2c532;
-  --color-ocher-washed: #f5eeca;
+  --color-green-main: hsl(155, 87%, 44%);
+  --color-green-dark: hsl(155, 87%, 36%);
+  --color-green-darker: hsl(155, 87%, 30%);
+  --color-green-bright: hsl(155, 87%, 48%);
+  --color-green-washed: hsl(155, 87%, 99%);
 
   /* incident variables (used in CSS) */
-  --color-bkg: var(--color-white);
+  --color-background: var(--color-white);
   --color-text: var(--color-gray-100);
   --color-text-offset: var(--color-gray-400);
 
+  --color-background-inverse: var(--color-gray-200);
+  --color-text-inverse: var(--color-background);
+  --color-text-offset-inverse: var(--color-gray-500);
+
   --color-accent: var(--color-green-main);
+  --color-accent-washed: var(--color-green-washed);
   --color-accent-dark: var(--color-green-dark);
+  --color-accent-bright: var(--color-green-bright);
+  --color-accent-darker: var(--color-green-darker);
 }

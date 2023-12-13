@@ -1,0 +1,80 @@
+// ===================================
+// =site footer
+// ===================================
+
+.c-sitefooter {
+  margin-block-start: 30px;
+  padding-block-start: 48px;
+  background-color: var(--color-background-inverse);
+  color: var(--color-text-inverse);
+
+  @include breakpoint(medium) {
+    margin-block-start: 60px;
+    padding-block-start: 84px;
+  }
+
+  @include breakpoint(large) {
+    margin-block-start: 90px;
+    padding-block-start: 90px;
+  }
+}
+
+.c-sitefooter__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 36px;
+
+  @include breakpoint(medium) {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 3fr);
+    gap: var(--grid-gutter);
+  }
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+.c-sitefooter__quote {
+  @include breakpoint(medium) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @include breakpoint(medium) {
+    grid-column: 1 / span 6;
+  }
+}
+
+.c-sitefooter__nav {
+  @include breakpoint(medium) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  @include breakpoint(medium) {
+    grid-column: 7 / span 3;
+  }
+}
+
+.c-sitefooter__social {
+  @include breakpoint(medium) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  @include breakpoint(medium) {
+    grid-column: 10 / span 3;
+  }
+}
+
+.c-sitefooter__end {
+  @include breakpoint(medium) {
+    margin-block-start: 36px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  @include breakpoint(large) {
+    margin-block-start: 60px;
+  }
+}

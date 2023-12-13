@@ -1,0 +1,30 @@
+// ===================================
+// =titles
+// ===================================
+
+.c-h1,
+.c-h2,
+.c-h3,
+.c-h4 {
+  font-weight: 400;
+  font-family: var(--fontstack-alt);
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: var(--color-text);
+}
+
+.c-h1 {
+  font-size: clamp(36px, 1rem + 3vw, 46px);
+}
+
+.c-h2 {
+  font-size: clamp(32px, 1rem + 2vw, 41px);
+}
+
+.c-h3 {
+  font-size: clamp(29px, 1rem + 2vw, 36px);
+}
+
+.c-h4 {
+  font-size: clamp(26px, 1rem + 2vw, 32px);
+}

@@ -1,0 +1,55 @@
+// ===================================
+// =spacing
+// ===================================
+
+$spacingmap: (
+  "xxs": 3px,
+  "xs": 6px,
+  "s": 12px,
+  "base": 18px,
+  "l": 24px,
+  "xl": 36px,
+  "xxl": 48px,
+);
+
+@each $size, $value in $spacingmap {
+  // margins
+  .u-mb-#{$size} {
+    margin-block: #{$value} !important;
+  }
+  .u-mbs-#{$size} {
+    margin-block-start: #{$value} !important;
+  }
+  .u-mbe-#{$size} {
+    margin-block-end: #{$value} !important;
+  }
+  .u-mi-#{$size} {
+    margin-inline: #{$value} !important;
+  }
+  .u-mis-#{$size} {
+    margin-inline-start: #{$value} !important;
+  }
+  .u-mie-#{$size} {
+    margin-inline-end: #{$value} !important;
+  }
+
+  // paddings
+  .u-pb-#{$size} {
+    padding-block: #{$value} !important;
+  }
+  .u-pbs-#{$size} {
+    padding-block-start: #{$value} !important;
+  }
+  .u-pbe-#{$size} {
+    padding-block-end: #{$value} !important;
+  }
+  .u-pi-#{$size} {
+    padding-inline: #{$value} !important;
+  }
+  .u-pis-#{$size} {
+    padding-inline-start: #{$value} !important;
+  }
+  .u-pie-#{$size} {
+    padding-inline-end: #{$value} !important;
+  }
+}

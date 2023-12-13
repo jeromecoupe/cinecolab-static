@@ -5,10 +5,22 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-background);
   color: var(--color-text);
+  background-color: var(--color-background);
+  background-image: url(../img/bkg_home_800.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100% auto;
 
   &.has-menu {
     overflow-y: hidden;
+  }
+
+  @include breakpoint(medium) {
+    background-image: url(../img/bkg_home_1024.jpg);
+  }
+
+  @include breakpoint(large) {
+    background-image: url(../img/bkg_home_1500.jpg);
   }
 }

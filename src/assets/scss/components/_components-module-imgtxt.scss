@@ -1,0 +1,41 @@
+// ===================================
+// =module image text
+// ===================================
+
+.c-mod-imgtxt {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--grid-gutter);
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: calc(var(--grid-gutter) * 2);
+  }
+
+  @include breakpoint(large) {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--grid-gutter);
+  }
+}
+
+.c-mod-imgtxt__txt {
+  @include breakpoint(medium) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  @include breakpoint(large) {
+    grid-column: 1 / span 5;
+  }
+}
+
+.c-mod-imgtxt__img {
+  @include breakpoint(medium) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  @include breakpoint(large) {
+    grid-column: 7 / span 6;
+  }
+}
