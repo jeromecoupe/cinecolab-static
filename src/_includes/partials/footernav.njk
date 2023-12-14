@@ -1,0 +1,17 @@
+<nav aria-label="Navigation principale">
+  <h2 class="c-footertitle">Navigation</h2>
+  {% for item in mainnav %}
+    {% if loop.first %}<ul class="c-footernav">{% endif %}
+
+      {% set currentAria= "" %}
+      {% if currentSection == item.navTrigger %}
+        {% set currentAria = "aria-current=\"page\""|safe %}
+      {% endif %}
+
+      <li class="c-footernav__item">
+        <a class="c-footernav__link  {{ currentClass }}" {{ currentAria }} href="{{ item.navUrl }}">{{ item.navLabel }}</a>
+      </li>
+
+    {% if loop.last %}</ul>{% endif %}
+  {% endfor %}
+</nav>

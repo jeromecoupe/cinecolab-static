@@ -1,24 +1,12 @@
 <header class="c-siteheader">
   <div class="c-siteheader__content l-container">
     <p class="c-siteheader__logo">
-      <a href="#">{% include "svg/logo.svg" %}</a>
+      <a href="/">{% include "svg/logo.svg" %}</a>
     </p>
-    <nav class="c-siteheader__mainnav">
-      <ul class="c-mainnav">
-        <li class="c-mainnav__item">
-          <a class="c-mainnav__link" href="#">Ressources</a>
-        </li>
-        <li class="c-mainnav__item">
-          <a class="c-mainnav__link" href="#">Formations</a>
-        </li>
-        <li class="c-mainnav__item">
-          <a class="c-mainnav__link" href="#">Blog</a>
-        </li>
-        <li class="c-mainnav__item">
-          <a class="c-mainnav__link" href="#">A propos</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="c-siteheader__mainnav">
+      {% include "partials/mainnav.njk" %}
+    </div>
+    
     <p class="c-siteheader__hamburger">
       <a href="#footernav" class="js-menutrigger">
         {% include "svg/icon_nav.svg" %}

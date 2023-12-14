@@ -7,19 +7,11 @@
       </div>
 
       <div class="c-sitefooter__nav">
-        <nav>
-          <h2 class="c-footertitle">Navigation</h2>
-          <ul class="c-footernav">
-            <li class="c-footernav__item"><a class="c-footernav__link" href="#">Resources</a></li>
-            <li class="c-footernav__item"><a class="c-footernav__link" href="#">Formations</a></li>
-            <li class="c-footernav__item"><a class="c-footernav__link" href="#">Blog</a></li>
-            <li class="c-footernav__item"><a class="c-footernav__link" href="#">A propos</a></li>
-          </ul>
-        </nav>
+        {% include "partials/footernav.njk" %}
       </div>
 
       <div class="c-sitefooter__social">
-        <nav>
+        <nav aria-label="Média sociaux">
           <h2 class="c-footertitle">Média sociaux</h2>
           <ul class="c-footernav">
             <li class="c-footernav__item"><a class="c-footernav__link" href="#">Mastodon</a></li>

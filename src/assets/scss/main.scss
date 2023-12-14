@@ -8,9 +8,9 @@
 @import "mixins/_mixins-mediaqueries.scss";
 
 // BASE
+@import "base/_base-reset.scss";
 @import "base/_base-fonts.scss";
 @import "base/_base-links.scss";
-@import "base/_base-margins.scss";
 @import "base/_base-body.scss";
 @import "base/_base-html.scss";
 
@@ -35,6 +35,7 @@
 @import "components/_components-footernav.scss";
 @import "components/_components-footertitle.scss";
 @import "components/_components-copyright.scss";
+@import "components/_components-pagination.scss";
 
 // LAYOUTS
 @import "layouts/_layouts-container.scss";

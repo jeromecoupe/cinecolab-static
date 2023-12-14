@@ -1,18 +1,18 @@
-<nav aria-label="navigation menu">
+<nav aria-label="Navigation">
   {% for item in mainnav %}
-    {% if loop.first %}<ul class="c-mobilenav">{% endif %}
+    {% if loop.first %}<ul class="c-mainnav">{% endif %}
 
       {% set currentClass = "" %}
-      {% set currentAria = "" %}
+      {% set currentAria= "" %}
       {% if currentSection == item.navTrigger %}
         {% set currentClass = "is-active" %}
         {% set currentAria = "aria-current=\"page\""|safe %}
       {% endif %}
 
-      <li class="c-mobilenav__item">
-        <a class="c-mobilenav__link  {{ currentClass }}" {{ currentAria }} href="{{ item.navUrl }}">{{ item.navLabel }}</a>
+      <li class="c-mainnav__item">
+        <a class="c-mainnav__link  {{ currentClass }}" {{ currentAria }} href="{{ item.navUrl }}">{{ item.navLabel }}</a>
       </li>
-      
+
     {% if loop.last %}</ul>{% endif %}
   {% endfor %}
 </nav>

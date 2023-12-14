@@ -1,0 +1,43 @@
+// ===================================
+// =pagination
+// ===================================
+
+.c-pagination {
+  margin-block-start: 24px;
+}
+
+.c-pages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(3 / 16 * 1rem);
+}
+
+.c-pages__link {
+  display: inline-block;
+  padding: calc(10 / 16 * 1rem) calc(12 / 16 * 1rem);
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 450;
+  line-height: 1;
+  text-decoration: none;
+  background-color: var(--color-pagination);
+  border-radius: 3px;
+  color: var(--color-text);
+
+  transition: background-color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-text);
+    background-color: var(--color-pagination-hover);
+  }
+}
+
+.c-pages__link.is-active {
+  background-color: var(--color-pagination-accent);
+}

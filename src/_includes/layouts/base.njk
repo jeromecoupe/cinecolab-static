@@ -1,9 +1,9 @@
-{% set page = currentSection|default("") %}
+{% set page = pageBackground|default("") %}
 
 <!DOCTYPE html>
 <html lang="fr">
   {% include "partials/html-head.njk" %}
-  <body data-page="{{ page }}">
+  <body data-page-background="{{ pageBackground }}">
     {% include "partials/siteheader.njk" %}
     <main>
       {% block content %}{% endblock %}
