@@ -2,6 +2,17 @@
 // =mobile navigation
 // ===================================
 
+@keyframes navSlideUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .c-mobilenav {
   list-style: none;
   margin: 0;
@@ -12,6 +23,10 @@
   justify-content: flex-start;
   align-items: stretch;
   gap: calc(6 / 16 * 1rem);
+}
+
+.c-mobilenav__item {
+  overflow: hidden;
 }
 
 .c-mobilenav__link {
@@ -34,4 +49,9 @@
   &:focus {
     color: var(--color-text-inverse);
   }
+}
+
+.is-active .c-mobilenav__link {
+  animation: navSlideUp 0.2s ease-out both;
+  animation-delay: calc(0.1s * var(--delay, 0));
 }
