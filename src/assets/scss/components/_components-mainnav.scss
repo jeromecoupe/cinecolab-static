@@ -23,7 +23,7 @@
   font-size: calc(16 / 16 * 1rem);
   font-family: var(--fontstack-alt);
   text-transform: uppercase;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   transition: color 0.2s ease-out;
 
   &:hover,
