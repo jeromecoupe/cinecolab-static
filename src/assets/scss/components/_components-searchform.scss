@@ -1,0 +1,38 @@
+// ===================================
+// =searchform
+// ===================================
+
+.c-searchform {
+  display: block;
+  margin-block-end: calc(30 / 16 * 1rem);
+}
+
+.c-searchform__field {
+  --padding: calc(12 / 16 * 1rem);
+  border: 2px solid var(--color-offset-light);
+  width: 100%;
+  border-radius: 3px;
+
+  padding-block: var(--padding);
+  padding-inline-start: var(--padding);
+  padding-inline-end: calc(60 / 16 * 1rem);
+
+  background-color: var(--color-background);
+  background-image: url(../img/icon_search.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - var(--padding)) 50%;
+
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.62;
+  font-family: var(--fontstack-main);
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--color-text-offset);
+  }
+
+  @include breakpoint(large) {
+    --padding: calc(18 / 16 * 1rem);
+  }
+}

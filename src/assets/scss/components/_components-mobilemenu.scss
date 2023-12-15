@@ -2,15 +2,6 @@
 // =mobile menu
 // ===================================
 
-@keyframes menuAppear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .c-mobilemenu {
   position: fixed;
   top: 0;
@@ -32,7 +23,7 @@
   &.is-active {
     display: flex;
 
-    animation: menuAppear 0.12s ease-out;
+    animation: appear 0.12s ease-out;
 
     @include breakpoint(large) {
       display: none;

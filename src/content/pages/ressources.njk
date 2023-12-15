@@ -17,24 +17,24 @@ permalink: /ressources/index.html
   <div class="c-section">
     <div class="l-container">
 
-      <form>
-        <input type="search">
-        <input type="submit" value="rechercher">
+      <form class="c-searchform">
+        <input class="c-searchform__field" type="search">
+        <input class="u-vhidden" type="submit" value="rechercher">
       </form>
 
-      <details>
-        <summary>Filtrer par catégories</summary>
-        <div>
-          <ul>
-            <li><a href="#">Toutes les catégories</a></li>
-            <li><a href="#">Scénario</a></li>
-            <li><a href="#">Production</a></li>
-            <li><a href="#">Transport</a></li>
-            <li><a href="#">Eclairage</a></li>
-            <li><a href="#">Matériel</a></li>
-            <li><a href="#">Post-production</a></li>
-            <li><a href="#">Décors</a></li>
-            <li><a href="#">Coiffure et maquillage</a></li>
+      <details class="c-categories">
+        <summary class="c-categories__trigger">{% include "svg/icon_filters.svg" %} Filtrer par catégories</summary>
+        <div class="c-categories__content">
+          <ul class="c-catlist">
+            <li class="c-catlist__item"><a class="c-catlist__link  is-active" href="#">Toutes</a></li>
+            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Scénario</a></li>
+            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Production</a></li>
+            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Transport</a></li>
+            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Eclairage</a></li>
+            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Matériel</a></li>
+            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Post-production</a></li>
+            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Décors</a></li>
+            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Coiffure et maquillage</a></li>
           </ul>
         </div>
       </details>
