@@ -1,0 +1,22 @@
+// ===================================
+// =banner 2 images
+// ===================================
+
+.c-bannerimages {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-areas: "a b";
+  gap: var(--grid-gutter-small);
+
+  @include breakpoint(small) {
+    gap: var(--grid-gutter);
+  }
+}
+
+.c-bannerimages__big {
+  grid-area: a;
+}
+
+.c-bannerimages__small {
+  grid-area: b;
+}

@@ -1,0 +1,19 @@
+// ===================================
+// =partners
+// ===================================
+
+.c-partners {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--grid-gutter);
+}
+
+.c-partner {
+  & > a {
+    display: block;
+  }
+}

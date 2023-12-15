@@ -1,0 +1,15 @@
+// ===================================
+// =value
+// ===================================
+
+.c-value__title {
+  font-size: calc(20 / 16 * 1rem);
+  font-family: var(--fontstack-alt);
+  font-weight: 450;
+  color: var(--color-text);
+  margin-block-end: calc(6 / 16 * 1rem);
+}
+
+.c-value__text {
+  color: var(--color-text-offset);
+}
