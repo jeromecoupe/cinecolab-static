@@ -9,8 +9,10 @@
         {% set currentAria = "aria-current=\"page\""|safe %}
       {% endif %}
 
+      {% set delay = loop.index %}
+
       <li class="c-mobilenav__item">
-        <a class="c-mobilenav__link  {{ currentClass }}" {{ currentAria }} href="{{ item.navUrl }}">{{ item.navLabel }}</a>
+        <a class="c-mobilenav__link  {{ currentClass }}" style="--delay: {{ delay }};" {{ currentAria }} href="{{ item.navUrl }}">{{ item.navLabel }}</a>
       </li>
       
     {% if loop.last %}</ul>{% endif %}
