@@ -9,15 +9,14 @@
   --color-gray-100: #010805;
   --color-gray-200: #1f2623;
   --color-gray-300: #5c615f;
-  --color-gray-400: #7b7f7d;
+  --color-gray-400: #707573;
   --color-gray-500: #bdbfbe;
   --color-gray-600: #d6d7d7;
   --color-gray-700: #e6e6e6;
   --color-gray-800: #fafafa;
 
   --color-green-main: hsl(155, 87%, 44%);
-  --color-green-dark: hsl(155, 87%, 36%);
-  --color-green-darker: hsl(155, 87%, 30%);
+  --color-green-dark: hsl(155, 83%, 29%);
   --color-green-bright: hsl(155, 87%, 48%);
   --color-green-washed: hsl(155, 87%, 99%);
 
@@ -38,5 +37,4 @@
   --color-accent-washed: var(--color-green-washed);
   --color-accent-dark: var(--color-green-dark);
   --color-accent-bright: var(--color-green-bright);
-  --color-accent-darker: var(--color-green-darker);
 }

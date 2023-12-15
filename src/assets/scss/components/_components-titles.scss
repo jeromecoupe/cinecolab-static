@@ -28,3 +28,15 @@
 .c-h4 {
   font-size: clamp(26px, 1rem + 2vw, 32px);
 }
+
+// ===================================
+// =small title
+// ===================================
+
+.c-smalltitle {
+  font-size: calc(18 / 16 * 1rem);
+  font-family: var(--fontstack-alt);
+  font-weight: 500;
+  color: var(--color-text);
+  margin-block-end: calc(12 / 16 * 1rem);
+}

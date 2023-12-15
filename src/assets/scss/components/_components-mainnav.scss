@@ -28,15 +28,6 @@
 
   &:hover,
   &:focus {
-    color: var(--color-accent-dark);
-  }
-}
-
-.c-mainnav__link.is-active {
-  color: var(--color-accent-dark);
-
-  &:hover,
-  &:focus {
-    color: var(--color-accent-dark);
+    color: var(--color-text-offset);
   }
 }

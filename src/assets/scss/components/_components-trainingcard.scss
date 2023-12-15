@@ -1,0 +1,39 @@
+// ===================================
+// =training card
+// ===================================
+
+.c-trainingcard {
+  display: block;
+}
+
+.c-trainingcard__media {
+  margin-block-end: calc(36 / 16 * 1rem);
+}
+
+.c-trainingcard__title {
+  font-weight: 400;
+  font-size: clamp(29px, 1rem + 2vw, 36px);
+  line-height: 1.2;
+  font-family: var(--fontstack-alt);
+  margin-block-end: calc(6 / 16 * 1rem);
+  color: var(--color-text);
+}
+
+.c-trainingcard__body {
+  @include breakpoint(medium) {
+    margin-inline-end: calc(24 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    margin-inline-end: calc(42 / 16 * 1rem);
+  }
+}
+
+.c-trainingcard__info {
+  color: var(--color-accent-dark);
+  font-weight: 500;
+}
+
+.c-trainingcard__date {
+  margin-block-end: calc(6 / 16 * 1rem);
+}
