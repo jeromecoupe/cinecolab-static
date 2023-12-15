@@ -3,17 +3,11 @@
 // ===================================
 
 .c-footertitle {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.2;
-  font-family: var(--fontstack-alt);
+  font-family: var(--fontstack-main);
   color: var(--color-text-inverse);
-  text-transform: uppercase;
-  letter-spacing: 4%;
+  // text-transform: uppercase;
   margin-block-end: calc(12 / 16 * 1rem);
-
-  @include breakpoint(large) {
-    margin-block-end: calc(18 / 16 * 1rem);
-    font-size: 1rem;
-  }
 }

@@ -13,7 +13,7 @@
   }
 }
 
-.l-half > div {
+.l-half > * {
   @include breakpoint(medium) {
     grid-area: content;
   }

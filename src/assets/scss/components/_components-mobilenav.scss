@@ -53,5 +53,5 @@
 
 .is-active .c-mobilenav__link {
   animation: navSlideUp 0.2s ease-out both;
-  animation-delay: calc(0.1s * var(--delay, 0));
+  animation-delay: calc(0.075s * var(--delay, 0));
 }

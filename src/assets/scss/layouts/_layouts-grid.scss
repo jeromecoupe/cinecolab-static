@@ -20,7 +20,18 @@ $breakpoints-map: (
 
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+}
+
+.l-grid--gap {
   gap: var(--grid-gutter);
+}
+
+.l-grid--colgap {
+  column-gap: var(--grid-gutter);
+}
+
+.l-grid--rowgap {
+  row-gap: var(--grid-gutter);
 }
 
 .l-grid--2cols {
@@ -36,11 +47,19 @@ $breakpoints-map: (
 }
 
 // ==================================
-// =responsive modifiers
+// =responsive gap
+// ==================================
+
+// ==================================
+// =responsive columns
 // ==================================
 
 @each $name, $query in $breakpoints-map {
   @media #{$query} {
+    .l-grid--full\@#{$name} {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
     .l-grid--2cols\@#{$name} {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
