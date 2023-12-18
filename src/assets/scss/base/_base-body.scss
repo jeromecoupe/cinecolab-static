@@ -8,12 +8,16 @@ body {
   color: var(--color-text);
   background-color: var(--color-background);
 
-  &.has-menu {
-    overflow-y: hidden;
+  @include breakpoint(large) {
+    font-size: calc(18 / 16 * 1rem);
+  }
+}
 
-    @include breakpoint(large) {
-      overflow-y: auto;
-    }
+body.has-menu {
+  overflow-y: hidden;
+
+  @include breakpoint(large) {
+    overflow-y: auto;
   }
 }
 

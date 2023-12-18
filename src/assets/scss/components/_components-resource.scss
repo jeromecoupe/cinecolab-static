@@ -3,8 +3,7 @@
 // ===================================
 
 .c-resource {
-  padding-block-start: calc(18 / 16 * 1rem);
-  border-block-start: 1px solid var(--color-border);
+  display: block;
 }
 
 .c-resource__type {

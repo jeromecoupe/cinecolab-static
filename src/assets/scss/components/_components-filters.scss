@@ -8,7 +8,7 @@
 }
 
 .c-filters__trigger {
-  font-weight: 600;
+  font-weight: 500;
   display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -26,5 +26,5 @@
 }
 
 .c-filters[open] .c-filters__content > div {
-  animation: slideUp 0.2s ease-out forwards;
+  animation: slideDown 0.2s ease-out forwards;
 }
