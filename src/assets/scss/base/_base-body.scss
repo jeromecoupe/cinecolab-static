@@ -17,7 +17,6 @@ body {
 }
 
 body[data-page-background="home"] {
-  background-attachment: fixed;
   background-color: var(--color-background);
   background-image: url(../img/bkg_home_800.jpg);
   background-repeat: no-repeat;

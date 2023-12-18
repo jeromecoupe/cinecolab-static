@@ -15,3 +15,11 @@
 address {
   font-style: normal;
 }
+
+/* ===================================
+=address
+=================================== */
+
+summary::-webkit-details-marker {
+  display: none;
+}

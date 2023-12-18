@@ -22,7 +22,6 @@
   font-family: var(--fontstack-alt);
   color: var(--color-text);
   text-decoration: none;
-  margin-block-end: calc(12 / 16 * 1rem);
   text-wrap: pretty;
 
   & > a {
@@ -41,4 +40,16 @@
 .c-resource__summary {
   color: var(--color-text-offset);
   font-size: 1rem;
+}
+
+.c-resource__cta {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(6 / 16 * 1rem);
+
+  & svg {
+    color: var(--color-accent-dark);
+  }
 }

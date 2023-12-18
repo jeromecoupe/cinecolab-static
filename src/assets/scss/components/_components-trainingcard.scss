@@ -7,7 +7,7 @@
 }
 
 .c-trainingcard__media {
-  margin-block-end: calc(36 / 16 * 1rem);
+  margin-block-end: calc(24 / 16 * 1rem);
 }
 
 .c-trainingcard__title {
@@ -17,16 +17,6 @@
   font-family: var(--fontstack-alt);
   margin-block-end: calc(6 / 16 * 1rem);
   color: var(--color-text);
-}
-
-.c-trainingcard__body {
-  @include breakpoint(medium) {
-    margin-inline-end: calc(24 / 16 * 1rem);
-  }
-
-  @include breakpoint(large) {
-    margin-inline-end: calc(42 / 16 * 1rem);
-  }
 }
 
 .c-trainingcard__info {

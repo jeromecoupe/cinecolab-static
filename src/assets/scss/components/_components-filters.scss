@@ -1,0 +1,30 @@
+// ===================================
+// =filters
+// ===================================
+
+.c-filters {
+  overflow: hidden;
+  margin-block-end: calc(42 / 16 * 1rem);
+}
+
+.c-filters__trigger {
+  font-weight: 600;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-filters__content {
+  margin-block-start: calc(12 / 16 * 1rem);
+}
+
+.c-filters[open] .c-filters__content {
+  animation: slideUp 0.2s ease-out forwards;
+}

@@ -22,43 +22,30 @@ permalink: /ressources/index.html
         <input class="u-vhidden" type="submit" value="rechercher">
       </form>
 
-      <details class="c-categories">
-        <summary class="c-categories__trigger">{% include "svg/icon_filters.svg" %} Filtrer par catégories</summary>
-        <div class="c-categories__content">
-          <ul class="c-catlist">
-            <li class="c-catlist__item"><a class="c-catlist__link  is-active" href="#">Toutes</a></li>
-            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Scénario</a></li>
-            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Production</a></li>
-            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Transport</a></li>
-            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Eclairage</a></li>
-            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Matériel</a></li>
-            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Post-production</a></li>
-            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Décors</a></li>
-            <li class="c-catlist__item"><a class="c-catlist__link" href="#">Coiffure et maquillage</a></li>
+      <details class="c-filters">
+        <summary class="c-filters__trigger">{% include "svg/icon_filters.svg" %} Filtrer par catégories</summary>
+        <div class="c-filters__content" open="false">
+          <ul class="c-categories">
+            <li class="c-categories__item"><a class="c-categories__link  is-active" href="#">Toutes</a></li>
+            <li class="c-categories__item"><a class="c-categories__link" href="#">Scénario</a></li>
+            <li class="c-categories__item"><a class="c-categories__link" href="#">Production</a></li>
+            <li class="c-categories__item"><a class="c-categories__link" href="#">Transport</a></li>
+            <li class="c-categories__item"><a class="c-categories__link" href="#">Eclairage</a></li>
+            <li class="c-categories__item"><a class="c-categories__link" href="#">Matériel</a></li>
+            <li class="c-categories__item"><a class="c-categories__link" href="#">Post-production</a></li>
+            <li class="c-categories__item"><a class="c-categories__link" href="#">Décors</a></li>
+            <li class="c-categories__item"><a class="c-categories__link" href="#">Coiffure et maquillage</a></li>
           </ul>
         </div>
       </details>
 
-      <ul class="l-grid  l-grid--gap  l-grid--2cols@medium  l-grid--3cols@large">
+      <ul class="l-grid  l-grid--gap  l-grid--2cols@small  l-grid--3cols@large">
         <li>
           <article class="c-resource">
             <p class="c-resource__type">Article</p>
             <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
             <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
-          </article>
-        </li>
-        <li>
-          <article class="c-resource">
-            <p class="c-resource__type">Vidéo</p>
-            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
-            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
-          </article>
-        </li>
-        <li>
-          <article class="c-resource">
-            <p class="c-resource__type">Organisation</p>
-            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
-            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
           </article>
         </li>
         <li>
@@ -66,20 +53,7 @@ permalink: /ressources/index.html
             <p class="c-resource__type">Article</p>
             <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
             <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
-          </article>
-        </li>
-        <li>
-          <article class="c-resource">
-            <p class="c-resource__type">Vidéo</p>
-            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
-            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
-          </article>
-        </li>
-        <li>
-          <article class="c-resource">
-            <p class="c-resource__type">Organisation</p>
-            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
-            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
           </article>
         </li>
         <li>
@@ -87,20 +61,7 @@ permalink: /ressources/index.html
             <p class="c-resource__type">Article</p>
             <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
             <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
-          </article>
-        </li>
-        <li>
-          <article class="c-resource">
-            <p class="c-resource__type">Vidéo</p>
-            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
-            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
-          </article>
-        </li>
-        <li>
-          <article class="c-resource">
-            <p class="c-resource__type">Organisation</p>
-            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
-            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
           </article>
         </li>
         <li>
@@ -108,20 +69,71 @@ permalink: /ressources/index.html
             <p class="c-resource__type">Article</p>
             <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
             <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
           </article>
         </li>
         <li>
           <article class="c-resource">
-            <p class="c-resource__type">Vidéo</p>
+            <p class="c-resource__type">Article</p>
             <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
             <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
           </article>
         </li>
         <li>
           <article class="c-resource">
-            <p class="c-resource__type">Organisation</p>
+            <p class="c-resource__type">Article</p>
             <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
             <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
+          </article>
+        </li>
+        <li>
+          <article class="c-resource">
+            <p class="c-resource__type">Article</p>
+            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
+            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
+          </article>
+        </li>
+        <li>
+          <article class="c-resource">
+            <p class="c-resource__type">Article</p>
+            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
+            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
+          </article>
+        </li>
+        <li>
+          <article class="c-resource">
+            <p class="c-resource__type">Article</p>
+            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
+            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
+          </article>
+        </li>
+        <li>
+          <article class="c-resource">
+            <p class="c-resource__type">Article</p>
+            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
+            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
+          </article>
+        </li>
+        <li>
+          <article class="c-resource">
+            <p class="c-resource__type">Article</p>
+            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
+            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
+          </article>
+        </li>
+        <li>
+          <article class="c-resource">
+            <p class="c-resource__type">Article</p>
+            <h2 class="c-resource__title"><a href="#">Titre d'une ressource qui peut être relativement long en nombre de charactères</a></h2>
+            <p class="c-resource__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores exercitationem vero, voluptatem dicta sequi corporis iste provident quis architecto molestiae dolores, nisi cupiditate voluptatum neque assumenda id. Praesentium, quo!</p>
+            <p class="c-resource__cta"><a href="#">Consulter</a> {% include "svg/icon_linkout.svg" %}</p>
           </article>
         </li>
       </ul>
