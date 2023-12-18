@@ -5,8 +5,8 @@
 .c-ctalink {
   display: inline-block;
 
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: inherit;
   line-height: 1;
   font-family: var(--fontstack-main);
   padding-block-end: calc(6 / 16 * 1rem);
@@ -22,4 +22,9 @@
     color: var(--color-text);
     border-color: var(--color-accent-dark);
   }
+}
+
+.c-ctalink svg {
+  margin-left: 6px;
+  display: inline-block;
 }

@@ -18,10 +18,10 @@
   --color-green-main: hsl(155, 87%, 44%);
   --color-green-dark: hsl(155, 89%, 34%);
   --color-green-bright: hsl(155, 87%, 48%);
-  --color-green-washed: hsl(155, 87%, 98%);
+  --color-green-washed: hsl(155, 12%, 98%);
 
   /* incident variables (used in CSS) */
-  --color-background: var(--color-white);
+  --color-background: var(--color-green-washed);
   --color-text: var(--color-gray-100);
   --color-text-offset: var(--color-gray-400);
 
@@ -39,7 +39,6 @@
   --color-border-inverse: rgba(255, 255, 255, 0.12);
 
   --color-accent: var(--color-green-main);
-  --color-accent-washed: var(--color-green-washed);
   --color-accent-dark: var(--color-green-dark);
   --color-accent-bright: var(--color-green-bright);
 }

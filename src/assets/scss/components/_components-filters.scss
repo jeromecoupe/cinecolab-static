@@ -25,6 +25,6 @@
   margin-block-start: calc(12 / 16 * 1rem);
 }
 
-.c-filters[open] .c-filters__content {
+.c-filters[open] .c-filters__content > div {
   animation: slideUp 0.2s ease-out forwards;
 }

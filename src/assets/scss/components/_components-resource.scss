@@ -3,16 +3,16 @@
 // ===================================
 
 .c-resource {
-  display: block;
+  padding-block-start: calc(18 / 16 * 1rem);
+  border-block-start: 1px solid var(--color-border);
 }
 
 .c-resource__type {
   font-weight: 500;
-  font-size: calc(14 / 16 * 1rem);
+  font-size: 1rem;
   font-family: var(--fontstack-main);
   margin-block-end: calc(3 / 16 * 1rem);
   color: var(--color-accent-dark);
-  text-transform: uppercase;
 }
 
 .c-resource__title {

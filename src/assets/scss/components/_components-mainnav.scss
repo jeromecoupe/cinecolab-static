@@ -19,15 +19,21 @@
   padding-block: calc(3 / 16 * 1rem);
   text-decoration: none;
   color: var(--color-text);
-  font-weight: 450;
-  font-size: calc(14 / 16 * 1rem);
-  font-family: var(--fontstack-alt);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  transition: color 0.2s ease-out;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: var(--fontstack-main);
+  // text-transform: uppercase;
+  // letter-spacing: 0.03em;
 
   &:hover,
   &:focus {
-    color: var(--color-text-offset);
+    color: var(--color-text);
+  }
+
+  &.is-active {
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
   }
 }
