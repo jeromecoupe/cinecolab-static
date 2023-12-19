@@ -36,6 +36,6 @@
   margin-block-start: calc(12 / 16 * 1rem);
 }
 
-.c-filters[open] .c-filters__content > div {
+.c-filters.is-open .c-filters__content {
   animation: filtersOpen 0.2s ease-out both;
 }

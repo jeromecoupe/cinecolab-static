@@ -1,0 +1,7 @@
+// ===================================
+// =body blocks
+// ===================================
+
+.c-bodyblock + .c-bodyblock {
+  margin-block-start: calc(36 / 16 * 1rem);
+}

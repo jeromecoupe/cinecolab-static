@@ -14,3 +14,15 @@
     padding-inline: calc(48 / 16 * 1rem);
   }
 }
+
+.l-container--large {
+  max-width: 1200px;
+}
+
+.l-container--medium {
+  max-width: 900px;
+}
+
+.l-container--copy {
+  max-width: 720px;
+}

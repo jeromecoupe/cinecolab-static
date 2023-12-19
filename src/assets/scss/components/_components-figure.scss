@@ -1,0 +1,17 @@
+// ===================================
+// =figure
+// ===================================
+
+.c-figure {
+  margin: 0;
+  padding: 0;
+}
+
+.c-figure__caption {
+  margin: 0;
+  padding-block: calc(6 / 16 * 1rem);
+
+  text-align: end;
+  font-size: calc(13 / 16 * 1rem);
+  color: var(--color-text-offset);
+}
