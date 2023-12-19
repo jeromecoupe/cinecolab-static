@@ -7,27 +7,10 @@
   padding-block: var(--vpadding);
 
   @include breakpoint(medium) {
-    --vpadding: 36px;
+    --vpadding: 42px;
   }
 
   @include breakpoint(large) {
-    --vpadding: 45px;
-  }
-}
-
-// ===================================
-// =variants
-// ===================================
-
-.c-section--pageintro {
-  --vpadding: 36px;
-  padding-block: var(--vpadding);
-
-  @include breakpoint(medium) {
     --vpadding: 48px;
-  }
-
-  @include breakpoint(large) {
-    --vpadding: 60px;
   }
 }

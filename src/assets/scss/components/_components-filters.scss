@@ -1,6 +1,17 @@
 // ===================================
 // =filters
-// ===================================
+// ==========
+@keyframes filtersOpen {
+  0% {
+    opacity: 0;
+    translate: 0 -12px;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
 
 .c-filters {
   overflow: hidden;
@@ -26,5 +37,5 @@
 }
 
 .c-filters[open] .c-filters__content > div {
-  animation: slideDown 0.2s ease-out forwards;
+  animation: filtersOpen 0.2s ease-out both;
 }

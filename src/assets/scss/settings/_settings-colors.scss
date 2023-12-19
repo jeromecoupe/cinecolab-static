@@ -18,16 +18,16 @@
   --color-green-main: hsl(155, 87%, 44%);
   --color-green-dark: hsl(155, 89%, 34%);
   --color-green-bright: hsl(155, 87%, 48%);
-  --color-green-washed: hsl(155, 60%, 98%);
+  --color-green-washed: hsl(155, 50%, 99%);
 
   /* incident variables (used in CSS) */
   --color-background: var(--color-green-washed);
+  // --color-background: var(--color-white);
+  --color-background-inverse: var(--color-gray-200);
+
   --color-text: var(--color-gray-100);
   --color-text-offset: var(--color-gray-400);
 
-  --color-offset-light: var(--color-gray-500);
-
-  --color-background-inverse: var(--color-gray-200);
   --color-text-inverse: var(--color-background);
   --color-text-offset-inverse: var(--color-gray-500);
 
