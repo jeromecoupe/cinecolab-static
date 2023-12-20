@@ -20,8 +20,8 @@
   text-decoration: none;
   color: var(--color-text);
   font-weight: 400;
-  font-size: 1rem;
-  font-family: var(--fontstack-main);
+  font-size: calc(18 / 16 * 1rem);
+  font-family: var(--fontstack-alt);
   // text-transform: uppercase;
   // letter-spacing: 0.03em;
 
@@ -34,6 +34,6 @@
     text-decoration: underline;
     text-decoration-color: var(--color-accent);
     text-decoration-thickness: 2px;
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.3em;
   }
 }
