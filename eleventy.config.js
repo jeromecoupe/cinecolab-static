@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
   // copy files
   eleventyConfig.addPassthroughCopy("./src/assets/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets/img/");
+  eleventyConfig.addPassthroughCopy({ "./src/static/": "./" });
 
   // ignore directories and files
   eleventyConfig.ignores.add("./src/assets/**/*");
