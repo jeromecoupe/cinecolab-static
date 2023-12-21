@@ -1,10 +1,20 @@
+{% set metaTitle = metatTitle|default("") %}
+{% set metaImage = metaImage|default("/assets/img/socialmedia.jpg") %}
+{% set metaDescription = metatDescription|default("") %}
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cinécolab</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ metaTitle }} - Cinécolab</title>
+  <meta name="description" content="{{ metaDescription }}">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ metaTitle }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:image" content="{{ metaImage }}">
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/main.css">
   <!-- JS -->
   <script type="module" src="/assets/js/main.bundle.js"></script>
 </head>
