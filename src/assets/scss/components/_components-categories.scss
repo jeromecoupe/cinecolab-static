@@ -26,19 +26,19 @@
 .c-categories__link {
   display: block;
   padding-block: calc(2 / 16 * 1rem);
-  color: var(--color-text);
+  color: var(--color-text-secondary);
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: var(--color-text);
+    color: var(--color-text-primary);
     text-decoration: underline;
-    text-decoration-color: var(--color-accent);
+    text-decoration-color: var(--color-ui-primary);
   }
 
   &.is-active {
-    font-weight: 550;
-    color: var(--color-accent-dark);
+    font-weight: 500;
+    color: var(--color-text-accent);
     text-decoration: underline;
   }
 

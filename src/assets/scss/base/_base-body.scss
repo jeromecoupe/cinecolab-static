@@ -5,8 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  color: var(--color-text);
-  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
 
   @include breakpoint(large) {
     font-size: calc(18 / 16 * 1rem);
@@ -33,5 +33,17 @@ body[data-page-background="home"] {
 
   @include breakpoint(large) {
     background-image: url(../img/bkg_home_1500.jpg);
+  }
+
+  [data-theme="dark"] & {
+    background-image: url(../img/bkg_home_dark_800.jpg);
+
+    @include breakpoint(medium) {
+      background-image: url(../img/bkg_home_dark_1024.jpg);
+    }
+
+    @include breakpoint(large) {
+      background-image: url(../img/bkg_home_dark_1500.jpg);
+    }
   }
 }

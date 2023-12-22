@@ -5,9 +5,10 @@
 :root {
   /* basic variables (not used in CSS) */
   --color-white: #ffffff;
+  --color-black: #000000;
 
-  --color-gray-100: #010805;
-  --color-gray-200: #1f2623;
+  --color-gray-100: hsl(163, 24%, 2%);
+  --color-gray-200: hsl(163, 24%, 5%);
   --color-gray-300: #5c615f;
   --color-gray-400: #707573;
   --color-gray-500: #bdbfbe;
@@ -15,30 +16,74 @@
   --color-gray-700: #e6e6e6;
   --color-gray-800: #fafafa;
 
-  --color-green-main: hsl(155, 87%, 44%);
-  --color-green-dark: hsl(155, 89%, 34%);
-  --color-green-bright: hsl(155, 87%, 48%);
-  --color-green-washed: hsl(155, 50%, 99%);
+  --color-green-100: hsl(163, 80%, 98%);
+  --color-green-200: hsl(163, 80%, 94%);
+  --color-green-300: hsl(163, 80%, 84%);
+  --color-green-400: hsl(163, 80%, 72%);
+  --color-green-500: hsl(163, 80%, 48%);
+  --color-green-600: hsl(163, 80%, 36%);
+  --color-green-700: hsl(163, 80%, 29%);
+  --color-green-800: hsl(163, 80%, 18%);
 
   /* incident variables (used in CSS) */
-  --color-background: var(--color-green-washed);
-  // --color-background: var(--color-white);
-  --color-background-inverse: var(--color-gray-200);
 
-  --color-text: var(--color-gray-100);
-  --color-text-offset: var(--color-gray-400);
+  /* backgrounds */
+  --color-background-primary: var(--color-white);
 
-  --color-text-inverse: var(--color-background);
-  --color-text-offset-inverse: var(--color-gray-500);
+  /* ui */
+  --color-ui-primary: var(--color-green-500);
+  --color-ui-dark: var(--color-green-700);
+  --color-ui-bright: var(--color-green-400);
 
-  --color-pagination: var(--color-gray-700);
-  --color-pagination-hover: var(--color-gray-600);
-  --color-pagination-accent: var(--color-green-main);
+  /* texts */
+  --color-text-primary: var(--color-gray-100);
+  --color-text-secondary: var(--color-gray-400);
+  --color-text-accent: var(--color-green-700);
+  --color-text-bright: var(--color-green-600);
 
-  --color-border: rgba(0, 0, 0, 0.12);
-  --color-border-inverse: rgba(255, 255, 255, 0.12);
+  /* borders */
+  --color-border-primary: rgba(0, 0, 0, 0.12);
 
-  --color-accent: var(--color-green-main);
-  --color-accent-dark: var(--color-green-dark);
-  --color-accent-bright: var(--color-green-bright);
+  /* forms */
+  --color-forms-border: var(--color-gray-700);
+  --color-forms-background: var(--color-background-primary);
+  --color-forms-focus: var(--color-ui-primary);
+
+  /* pagination */
+  --color-pagination-text: var(--color-gray-100);
+  --color-pagination-text-active: var(--color-gray-100);
+  --color-pagination-background: rgba(0, 0, 0, 0.18);
+  --color-pagination-background-hover: rgba(0, 0, 0, 0.12);
+  --color-pagination-background-active: var(--color-green-400);
+}
+
+[data-theme="dark"] {
+  /* backgrounds */
+  --color-background-primary: var(--color-gray-100);
+
+  /* ui */
+  --color-ui-primary: var(--color-green-500);
+  --color-ui-dark: var(--color-green-700);
+  --color-ui-bright: var(--color-green-400);
+
+  /* texts */
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: var(--color-gray-500);
+  --color-text-accent: var(--color-green-500);
+  --color-text-bright: var(--color-green-500);
+
+  /* borders */
+  --color-border-primary: rgba(255, 255, 255, 0.12);
+
+  /* forms */
+  --color-forms-border: var(--color-gray-400);
+  --color-forms-background: var(--color-background-primary);
+  --color-forms-focus: var(--color-gray-600);
+
+  /* pagination */
+  --color-pagination-text: var(--color-gray-800);
+  --color-pagination-text-active: var(--color-gray-800);
+  --color-pagination-background: rgba(255, 255, 255, 0.18);
+  --color-pagination-background-hover: rgba(255, 255, 255, 0.12);
+  --color-pagination-background-active: var(--color-green-400);
 }

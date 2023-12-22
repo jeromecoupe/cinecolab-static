@@ -12,7 +12,7 @@
   font-family: var(--fontstack-alt);
   line-height: 1.2;
   margin-bottom: 0.5em;
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 .c-h1 {
@@ -39,6 +39,6 @@
   font-size: calc(18 / 16 * 1rem);
   font-family: var(--fontstack-alt);
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--color-text-primary);
   margin-block-end: calc(12 / 16 * 1rem);
 }

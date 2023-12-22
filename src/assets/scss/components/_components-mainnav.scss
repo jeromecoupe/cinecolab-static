@@ -18,7 +18,7 @@
   display: inline-block;
   padding-block: calc(3 / 16 * 1rem);
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-text-primary);
   font-weight: 400;
   font-size: calc(18 / 16 * 1rem);
   font-family: var(--fontstack-alt);
@@ -27,12 +27,12 @@
 
   &:hover,
   &:focus {
-    color: var(--color-text);
+    color: var(--color-text-primary);
   }
 
   &.is-active {
     text-decoration: underline;
-    text-decoration-color: var(--color-accent);
+    text-decoration-color: var(--color-ui-primary);
     text-decoration-thickness: 2px;
     text-underline-offset: 0.3em;
   }

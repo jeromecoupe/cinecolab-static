@@ -10,15 +10,16 @@
 .c-searchform__field {
   --padding: calc(12 / 16 * 1rem);
 
-  border: 2px solid var(--color-border);
+  border: 2px solid var(--color-forms-border);
   width: 100%;
   border-radius: 3px;
+  color: inherit;
 
   padding-block: var(--padding);
   padding-inline-end: var(--padding);
   padding-inline-start: calc(60 / 16 * 1rem);
 
-  background-color: var(--color-background);
+  background-color: var(--color-background-primary);
   background-image: url(../img/icon_search.svg);
   background-repeat: no-repeat;
   background-position: 18px 50%;
@@ -30,7 +31,7 @@
 
   &:focus-visible {
     outline: none;
-    border-color: var(--color-text-offset);
+    border-color: var(--color-forms-focus);
   }
 
   @include breakpoint(large) {

@@ -24,7 +24,7 @@
     line-height: 1;
     width: 54px;
     height: 2px;
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-primary);
   }
 }
 
@@ -38,6 +38,6 @@
 
 .c-blogpost__meta {
   font-size: calc(14 / 16 * 1rem);
-  color: var(--color-text-offset);
+  color: var(--color-text-secondary);
   margin-block-end: calc(3 / 16 * 1rem);
 }

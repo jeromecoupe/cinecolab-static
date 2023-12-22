@@ -10,7 +10,7 @@
   cursor: pointer;
   vertical-align: middle;
 
-  color: var(--color-text);
+  color: var(--color-text-primary);
   font-weight: 400;
   font-size: 1rem;
   line-height: 1;
@@ -21,14 +21,14 @@
   border-radius: 3px;
 
   background-color: transparent;
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--color-ui-primary);
 
   transition: border-color 0.3s ease-out;
 
   &:hover,
   &:focus {
-    color: var(--color-text);
-    border-color: var(--color-accent-dark);
+    color: var(--color-text-primary);
+    border-color: var(--color-ui-dark);
   }
 }
 
@@ -36,14 +36,14 @@
   border: none;
 
   padding: calc(14 / 16 * 1rem) calc(20 / 16 * 1rem);
-  color: var(--color-text);
-  background-color: var(--color-accent-bright);
+  color: var(--color-text-primary);
+  background-color: var(--color-ui-primary);
   transition: background-color 0.3s ease-out;
 
   &:hover,
   &:focus {
-    color: var(--color-text);
-    background-color: var(--color-accent);
+    color: var(--color-text-primary);
+    background-color: var(--color-ui-bright);
   }
 }
 

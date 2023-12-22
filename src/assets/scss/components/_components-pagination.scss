@@ -25,19 +25,19 @@
   font-weight: 450;
   line-height: 1;
   text-decoration: none;
-  background-color: var(--color-pagination);
+  background-color: var(--color-pagination-background);
   border-radius: 3px;
-  color: var(--color-text);
+  color: var(--color-pagination-text);
 
   transition: background-color 0.2s ease-out;
 
   &:hover,
   &:focus {
-    color: var(--color-text);
-    background-color: var(--color-pagination-hover);
+    color: var(--color-pagination-text);
+    background-color: var(--color-pagination-background-hover);
   }
 }
 
 .c-pages__link.is-active {
-  background-color: var(--color-pagination-accent);
+  background-color: var(--color-ui-primary);
 }

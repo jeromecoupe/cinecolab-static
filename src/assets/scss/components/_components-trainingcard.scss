@@ -16,11 +16,11 @@
   line-height: 1.2;
   font-family: var(--fontstack-alt);
   margin-block-end: calc(6 / 16 * 1rem);
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 .c-trainingcard__info {
-  color: var(--color-accent-dark);
+  color: var(--color-text-accent);
   font-weight: 500;
 }
 

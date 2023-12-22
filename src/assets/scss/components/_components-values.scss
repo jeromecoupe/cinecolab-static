@@ -6,10 +6,10 @@
   font-size: calc(20 / 16 * 1rem);
   font-family: var(--fontstack-alt);
   font-weight: 450;
-  color: var(--color-text);
+  color: var(--color-text-primary);
   margin-block-end: calc(6 / 16 * 1rem);
 }
 
 .c-value__text {
-  color: var(--color-text-offset);
+  color: var(--color-text-secondary);
 }

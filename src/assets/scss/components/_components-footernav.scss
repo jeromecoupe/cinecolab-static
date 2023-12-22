@@ -18,7 +18,7 @@
 .c-footernav__link {
   display: block;
   text-decoration: none;
-  color: var(--color-text-offset-inverse);
+  color: var(--color-text-secondary);
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.32;
@@ -33,6 +33,7 @@
   &:hover,
   &:focus {
     text-decoration: underline;
-    color: var(--color-accent);
+    color: var(--color-text-secondary);
+    text-decoration-color: var(--color-ui-primary);
   }
 }

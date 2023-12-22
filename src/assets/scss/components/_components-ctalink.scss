@@ -11,16 +11,16 @@
   font-family: var(--fontstack-main);
   padding-block-end: calc(6 / 16 * 1rem);
 
-  border-bottom: 3px solid var(--color-accent);
+  border-bottom: 3px solid var(--color-ui-primary);
 
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-text-primary);
   transition: border-color 0.2s ease-out;
 
   &:hover,
   &:focus {
-    color: var(--color-text);
-    border-color: var(--color-accent-dark);
+    color: var(--color-text-primary);
+    border-color: var(--color-ui-dark);
   }
 }
 

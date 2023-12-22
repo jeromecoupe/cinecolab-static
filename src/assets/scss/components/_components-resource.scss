@@ -11,7 +11,7 @@
   font-size: calc(14 / 16 * 1rem);
   font-family: var(--fontstack-main);
   margin-block-end: calc(3 / 16 * 1rem);
-  color: var(--color-accent-dark);
+  color: var(--color-text-accent);
   text-transform: uppercase;
 }
 
@@ -20,7 +20,7 @@
   font-size: clamp(20/16 * 1rem, 0.5rem + 1vw, 23/16 * 1rem);
   line-height: 1.32;
   font-family: var(--fontstack-alt);
-  color: var(--color-text);
+  color: var(--color-text-primary);
   text-decoration: none;
   text-wrap: pretty;
 
@@ -32,13 +32,13 @@
   & > a:hover,
   & > a:focus {
     text-decoration: underline;
-    text-decoration-color: var(--color-accent);
+    text-decoration-color: var(--color-ui-bright);
     text-decoration-thickness: 1px;
   }
 }
 
 .c-resource__summary {
-  color: var(--color-text-offset);
+  color: var(--color-text-secondary);
   font-size: 1rem;
 }
 

@@ -10,7 +10,7 @@ a {
 
   &:hover,
   &:focus {
-    color: var(--color-text);
-    text-decoration-color: var(--color-accent);
+    color: var(--color-text-primary);
+    text-decoration-color: var(--color-ui-primary);
   }
 }
