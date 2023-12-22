@@ -29,6 +29,7 @@
 
   /* backgrounds */
   --color-background-primary: var(--color-white);
+  --color-background-inverse: var(--color-gray-100);
 
   /* ui */
   --color-ui-primary: var(--color-green-500);
@@ -40,6 +41,7 @@
   --color-text-secondary: var(--color-gray-400);
   --color-text-accent: var(--color-green-700);
   --color-text-bright: var(--color-green-600);
+  --color-text-inverse: var(--color-white);
 
   /* borders */
   --color-border-primary: rgba(0, 0, 0, 0.12);
